@@ -1,0 +1,67 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: #f88888; */
+    background: url(/assets/images/login_bg.jpg) no-repeat center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    
+}
+
+.login-content{
+    width: 400px;
+    height: 310px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    /* translate: -50% -50%; */
+    transform: translate(-50%,-50%)
+}
+.title-box{
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+.reg-box{
+    display: none;
+}
+
+.login-box form,.reg-box form{
+    padding: 0 20px;
+}
+/* .login-content .reg-box .layui-input-inline,
+.login-content .login-box .layui-input-inline{
+    width: 90%;
+    margin-left: 5%;
+} */
+.login-content .login-box .layui-form-item,
+.login-content .reg-box .layui-form-item
+{
+    position: relative;
+}
+.login-content .login-box .layui-form-item i,
+.login-content .reg-box .layui-form-item i{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-content .reg-box .layui-form-item input,
+.login-content .login-box .layui-form-item input{
+    padding-left: 30px;
+}
+.login-content .login-box .layui-input-inline input::placeholder{
+    /* padding-left: 15px; */
+}
+
+.reg-text,.login-text{
+   display: flex;
+   justify-content: flex-end;
+   font-size: 14px;
+}
